@@ -1,3 +1,4 @@
+//This file contains variables//
 variable "region" {
   default = "ap-south-1"
 }
