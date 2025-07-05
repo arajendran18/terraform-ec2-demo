@@ -1,0 +1,14 @@
+stages:
+  - fmt
+  - validate
+
+fmt:
+  stage: fmt
+  script:
+    - terraform fmt -check -recursive
+
+validate:
+  stage: validate
+  script:
+    - terraform init
+    - terraform validate
